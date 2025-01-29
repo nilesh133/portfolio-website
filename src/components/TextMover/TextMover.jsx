@@ -1,7 +1,8 @@
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollTrigger } from "gsap";
 import './textmover.css';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const TextMover = () => {
   const firstText = useRef(null);
