@@ -1,0 +1,35 @@
+.p_loading_container {
+  height: 100vh;
+  background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.p_loading_left {
+    display: flex;
+}
+
+.p_loading_left h1 {
+    font-size: 150px;
+    margin: 0 !important;
+    line-height: 150px;
+}
+
+.p_loading_right {
+    display: flex;
+}
+
+.p_loading_right h1 {
+    font-size: 150px;
+    margin: 0 !important;
+    line-height: 150px;
+}
+
+.p_loading_smiley {
+    position: relative;
+}
+
+.p_loading_smiley svg{
+    font-size: 7rem;
+}

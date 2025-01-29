@@ -1,0 +1,26 @@
+.scrolling_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300vh; /* To create scroll space */
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+
+  .scrolling_text_inner {
+    position: sticky;
+    top: 0;
+  }
+  
+  .scrolling-text-item {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 20px 0;
+    white-space: nowrap;
+    transform: translateX(0); /* Initial position */
+    text-align: center;
+    margin: 0 !important;
+  }
+  

@@ -1,0 +1,80 @@
+.herosection_wrapper {
+    height: 100vh;
+}
+
+.herosection_main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 25vh; */
+}
+
+.herosection_heading {
+    font-size: 1.6rem;
+    color: var(--color1);
+    font-weight: 500;
+}
+
+.herosection_heading h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+}
+
+.herosection_name_inner {
+    display: flex;
+    gap: 2rem;
+}
+
+.herosection_name_text h1{
+    font-size: 8rem;
+    color: var(--color3);
+    margin: 0 !important;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+}
+
+.herosection_name_label {
+    position: absolute;
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+    background-color: var(--color1);
+    width: fit-content;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.herosection_name_fn {
+    position: relative;
+}
+
+.herosection_name_ln {
+    position: relative;
+}
+
+.herosection_name_label_fn {
+    background-color: var(--color1);
+    position: absolute;
+    top: 0;
+    transform: rotate(-3deg)
+}
+
+.herosection_name_ln {
+   
+}
+
+.herosection_name_label_ln{
+    background-color: var(--color4);
+    position: absolute;
+    bottom: -10%;
+    /* left: 0%; */
+    transform: rotate(3deg);
+}
+
+.herosection_inner{
+    height: 100%;
+}

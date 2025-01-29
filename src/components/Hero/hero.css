@@ -1,0 +1,73 @@
+.hero_wrapper{
+    min-height: 70vh;
+    height: 70vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 120px;
+}
+
+.hero_inner {
+    width: 100%;
+    height: 100%;
+}
+
+.hero_main {
+    width: 95%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000001a;
+    border-radius: 10px;
+    margin: 0 auto !important;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.hero_profile_p {
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.hero_profile_left {
+    display: flex;
+    gap: 8px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    height: fit-content;
+    flex: 1.5;
+  }
+  
+  .hero_profile_animated_word {
+    display: inline-block;
+    font-size: 78px;
+    font-weight: 700;
+    margin-right: 8px !important;
+    line-height: 80px;
+  }
+
+  .hero_profile_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero_profile_right {
+   flex: 0.5;
+  }
+
+  .hero_profile_right img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .hero_profile_animated_word_differentcolor {
+    color: var(--color1);
+  }
+
+  .hero_name p{
+    font-size: 1.2rem;
+  }
+
+  .hero_description p{
+    font-size: 1.2rem;
+  }

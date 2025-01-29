@@ -1,0 +1,37 @@
+/* Full screen height to allow for scrolling */
+.screen {
+    height: 200vh;
+    background-color: #f5f5f5;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  /* Container holding all cards */
+  .cards-container {
+    /* height: 200vh; */
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    /* top: 20%; */
+  }
+  
+  /* Individual cards */
+  .card {
+    height: 50vh;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the first card */
+  .first-card {
+    background-color: #d1c4e9;
+  }
+  

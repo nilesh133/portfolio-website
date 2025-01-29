@@ -1,0 +1,31 @@
+/* Container for the whole animation */
+.threeTextContainer {
+  height: 200vh; /* Make container long enough for scrolling */
+  position: relative;
+}
+
+/* Sticky container for the text */
+.stickyContainer {
+  position: sticky;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text styles */
+.text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+  will-change: transform, opacity;
+  height: 100vh;
+  width: 90%;
+}

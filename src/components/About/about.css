@@ -1,0 +1,39 @@
+.about_wrapper {
+    height: 250vh;
+    width: 100%;
+    background-color: var(--color3);
+}
+
+.about_inner {
+    position: sticky;
+    top: 0;
+}
+
+.about_content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_content_h1 {
+    display: flex;
+    font-size: 80px;
+    line-height: 1;
+    padding: 40px;
+    max-width: 1280px;
+    color: var(--color5);
+    flex-wrap: wrap;
+    text-transform: uppercase;
+  }
+  
+  .about_content_h1 .about_h1_word {
+    position: relative;
+    margin-right: 12px;
+    margin-top: 12px;
+  }
+  
+  .about_content_h1 .about_h1_word .about_h1_shadow {
+    position: absolute;
+    opacity: 0.2;
+  }

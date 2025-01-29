@@ -1,0 +1,36 @@
+.skills-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.skills-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Prevents overlay from interfering with physics interactions */
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.skill-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
