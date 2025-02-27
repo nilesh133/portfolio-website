@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./navbar.css";
 import { navScrollGsap } from "../../animations/gsap/navbar";
+import navbar_logo from "../../images/Navbar/navbar_logo.png"
 
 const Navbar = () => {
   const navMainRef = useRef(null);
@@ -15,7 +16,18 @@ const Navbar = () => {
       <div className="p_nav_inner">
         <div className="p_nav_main" ref={navMainRef}>
           <div className="p_nav_main_inner" ref={navMainInnerRef}></div>
-          <div className="p_nav_main_container">
+          <div className="p_navbar_container plus-jakarta-sans-font">
+            <div className="navbar_left">
+              <img src={navbar_logo} alt="" />
+            </div>
+            <div className="navbar_middle bricolage-grotesque-font">
+              <h3>PORTFOLIO</h3>
+            </div>
+            <div className="navbar_right">
+
+            </div>
+          </div>
+          {/* <div className="p_nav_main_container">
             <div className="p_nav_left">
               <div className="p_nav_left_container">
                 <div className="p_nav_left_item">
@@ -54,7 +66,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

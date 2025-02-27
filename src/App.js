@@ -13,6 +13,10 @@ import ServicesSectionTempMain from './components/ServicesSectionTemp/ServicesSe
 import ServicesSectionTwoMain from './components/ServicesSectionTwo/ServicesSectionTwoMain/ServicesSectionTwoMain';
 import HeroTwo from './components/HeroTwo/HeroTwo';
 import TextMover from './components/TextMover/TextMover';
+import ExperienceMain from './Experience/ExperienceMain/ExperienceMain';
+import ProjectsMain from './components/Projects/ProjectsMain/ProjectsMain';
+import HeroThree from './components/HeroThree/HeroThree';
+import ExperienceTwo from './components/ExperienceTwo/ExperienceTwo';
 
 const App = () => {
 
@@ -39,24 +43,28 @@ const App = () => {
     <div className='p_main'>
       <div className='p_main_container'>
         <div className='p_main_item'>
+          {/* <Navbar/> */}
+          <HeroThree/>
           {/* <LoadingScreen/> */}
-          <Navbar/>
           {/* <Hero/> */}
-          <HeroTwo/>
-          <TextMover/>
           <About/>
+          <ExperienceTwo/>
+          {/* <HeroTwo/> */}
+          <TextMover/>
           <Benefits/>
           <ShortDescription/>
           <div style={{height: "100vh", marginTop: '', zIndex: "2"}}>
             Scroll
           </div>
           <ServicesSectionMain/>
-          {/*<ServicesSectionTempMain/>*/}
-          <ServicesSectionTwoMain/>
+          {/* <ServicesSectionTempMain/> */}
+          {/* <ServicesSectionTwoMain/> */}
           <div style={{height: "100vh", marginTop: ''}}>
             Scroll 2
           </div>
           <Skills/>
+          <ExperienceMain/>
+          <ProjectsMain/>
           {/* <About/> */}
           <div style={{height: "100vh", marginTop: ''}}>
             Scroll 2

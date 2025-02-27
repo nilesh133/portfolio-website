@@ -1,0 +1,53 @@
+.projectsmain_project{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 1px solid rgb(201, 201, 201);
+    cursor: pointer;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.projectsmain_project:last-of-type{
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.projectsmain_project::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color2);
+    z-index: -1;
+    transition: top 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.projectsmain_project:hover::after {
+    top: 0;
+}
+
+.projectsmain_project:hover h2{
+    transform: translateX(-10px);
+    color: var(--color5);
+}
+
+.projectsmain_project:hover p{
+    transform: translateX(10px);
+    color: var(--color5);
+}
+
+.projectsmain_project h2{
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+.projectsmain_project p{
+    transition: all 0.4s;
+    font-weight: 300;
+}

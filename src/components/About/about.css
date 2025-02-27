@@ -1,7 +1,10 @@
 .about_wrapper {
     height: 250vh;
     width: 100%;
-    background-color: var(--color3);
+    background-color: var(--color2);
+    z-index: 10;
+    position: relative;
+    padding-bottom: 50vh;
 }
 
 .about_inner {
@@ -18,22 +21,37 @@
 
 .about_content_h1 {
     display: flex;
-    font-size: 80px;
+    font-size: 40px;
     line-height: 1;
     padding: 40px;
     max-width: 1280px;
-    color: var(--color5);
+    color: var(--color6);
     flex-wrap: wrap;
-    text-transform: uppercase;
+    font-weight: 500;
+    /* text-transform: uppercase; */
   }
   
   .about_content_h1 .about_h1_word {
     position: relative;
     margin-right: 12px;
     margin-top: 12px;
+    /* line-height: 20px; */
   }
   
   .about_content_h1 .about_h1_word .about_h1_shadow {
     position: absolute;
     opacity: 0.2;
+    /* line-height: 20px; */
+  }
+
+  .about_content_newline {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .about_content_icons {
+    font-size: 3rem;
+    margin-left: -8px;
+    margin-right: 2px;
   }

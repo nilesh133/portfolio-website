@@ -1,0 +1,73 @@
+.experience_cardContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+}
+
+.experience_cardContainer .experience_card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -25%;
+  height: 500px;
+  width: 1000px;
+  border-radius: 25px;
+  padding: 50px;
+  transform-origin: top;
+}
+
+.experience_cardcontent_header h1{
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0 !important;
+    font-family: Josefin Sans, sans-serif;
+    /* letter-spacing: 4px; */
+}
+
+.experience_cardcontent_company {
+  display: flex;
+  align-items: center;
+}
+
+.experience_cardcontent_company h3 {
+    font-size: 1.7rem;
+    margin: 0;
+    /* margin-bottom: 4rem; */
+    font-family: Josefin Sans, sans-serif;
+}
+
+.experience_cardcontent_description {
+    font-weight: 500;
+    font-family: Josefin Sans, sans-serif;
+    margin-top: 3rem !important;
+}
+
+.experience_cardcontent_company_separator {
+  margin: 0 1rem;
+}
+
+.experience_cardcontent_company_separator svg {
+  font-size: 1.5rem;
+  margin: 0 1rem !important;
+}
+
+.experience_cardcontent_item span svg {
+  font-size: 1.5rem;
+  margin-bottom: -0.1rem;
+  margin-right: 0.3rem;
+}
+
+.experience_cardcontent_mainicon {
+  position: absolute;
+  bottom: 84px;
+  right: 84px;
+  width: 50px;
+  height: 50px;
+}
+
+.experience_cardcontent_mainicon span svg {
+  font-size: 7rem;
+}
