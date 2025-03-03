@@ -1,0 +1,20 @@
+.experience_header {
+    z-index: 10;
+    padding: 25vh 0;
+    position: relative;
+    background-color: #000000;
+  }
+  
+  .experience_header h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+  }
+/* 
+  .skills_matter canvas {
+    width: 100%;
+  } */

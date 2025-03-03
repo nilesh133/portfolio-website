@@ -1,0 +1,35 @@
+.services_main {
+    position: relative;
+    padding: 10rem 0;
+    background-color: #000;
+    z-index: 10;
+}
+
+.services_main_container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.services_left {
+    flex: 0.4;
+}
+
+.services_right {
+    flex: 0.6;
+}
+
+.services_left h2 {
+    position: sticky;
+    top: 50vh;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: var(--color6);
+    text-align: center;
+}
+
+.services_left p {
+    position: sticky;
+    top: 55vh;
+}

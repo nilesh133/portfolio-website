@@ -1,0 +1,29 @@
+.skills_two_main{
+    z-index: 10;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.skills_two_header h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.skills_two_achievements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skills_two_achievements span {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.skills_two_achievements span svg {
+    font-size: 3rem;
+}

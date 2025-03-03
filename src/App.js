@@ -17,6 +17,11 @@ import ExperienceMain from './Experience/ExperienceMain/ExperienceMain';
 import ProjectsMain from './components/Projects/ProjectsMain/ProjectsMain';
 import HeroThree from './components/HeroThree/HeroThree';
 import ExperienceTwo from './components/ExperienceTwo/ExperienceTwo';
+import ServicesThreeMain from './components/ServicesThree/ServicesThreeMain/ServicesThreeMain';
+import Footer from './components/Footer/Footer';
+import SkillsTwo from './components/SkillsTwo/SkillsTwo';
+import SkillsTwoMain from './components/SkillsTwo/SkillsTwoMain/SkillsTwoMain';
+import ExperienceTwoHeader from './components/ExperienceTwo/ExperienceTwoHeader/ExperienceTwoHeader';
 
 const App = () => {
 
@@ -25,50 +30,62 @@ const App = () => {
       smooth: true,
       smoothTouch: true,
     });
-  
+
     const raf = (time) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };
-  
+
     requestAnimationFrame(raf);
-  
+
     return () => {
       lenis.destroy();
     };
   }, []);
-  
+
 
   return (
     <div className='p_main'>
       <div className='p_main_container'>
         <div className='p_main_item'>
+          <HeroThree />
+          <About />
+          <ExperienceTwoHeader/>
+          <ExperienceTwo />
+          {/* <Skills/> */}
+          <SkillsTwoMain/>
+          <SkillsTwo/>
+          <ServicesThreeMain />
+          <Footer />
+        </div>
+        <div className='p_main_item'>
           {/* <Navbar/> */}
-          <HeroThree/>
+          {/* <HeroThree/> */}
           {/* <LoadingScreen/> */}
           {/* <Hero/> */}
-          <About/>
-          <ExperienceTwo/>
+          {/* <About/> */}
+          {/* <ExperienceTwo/> */}
+          {/* <ServicesThreeMain/> */}
           {/* <HeroTwo/> */}
-          <TextMover/>
-          <Benefits/>
-          <ShortDescription/>
-          <div style={{height: "100vh", marginTop: '', zIndex: "2"}}>
+          {/* <TextMover/> */}
+          {/* <Benefits/> */}
+          {/* <ShortDescription/> */}
+          {/* <div style={{height: "100vh", marginTop: '', zIndex: "2"}}>
             Scroll
-          </div>
-          <ServicesSectionMain/>
+          </div> */}
+          {/* <ServicesSectionMain/> */}
           {/* <ServicesSectionTempMain/> */}
           {/* <ServicesSectionTwoMain/> */}
-          <div style={{height: "100vh", marginTop: ''}}>
+          {/* <div style={{height: "100vh", marginTop: ''}}>
             Scroll 2
-          </div>
-          <Skills/>
-          <ExperienceMain/>
-          <ProjectsMain/>
+          </div> */}
+          {/* <ExperienceMain/> */}
+          {/* <ProjectsMain/> */}
           {/* <About/> */}
-          <div style={{height: "100vh", marginTop: ''}}>
+          {/* <div style={{height: "100vh", marginTop: ''}}>
             Scroll 2
-          </div>
+          </div> */}
+          {/* <Footer/> */}
         </div>
       </div>
     </div>

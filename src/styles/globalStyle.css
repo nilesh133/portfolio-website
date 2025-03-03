@@ -6,7 +6,8 @@ body {
   margin: 0;
   /* background-color: #f9dddf; */
   --color1: #bc2637;
-  --color2: #161616;
+  /* --color2: #161616; */
+  --color2: #000000;
   --color3: #2f303d;
   --color4: #68a7f4;
   --color5: #f9dddf;
