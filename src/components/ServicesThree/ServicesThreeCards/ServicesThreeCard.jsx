@@ -26,6 +26,9 @@ const ServicesThreeCard = ({
         }}
         className="servicesthree_card"
       >
+        <div className="servicesthree_numbers jost-font">
+          <h1>0{i+1}</h1>
+        </div>
         <div className="servicesthree_card_main">
           <div className="servicesthree_card_container">
             <h1>{otherProps?.services_header}</h1>

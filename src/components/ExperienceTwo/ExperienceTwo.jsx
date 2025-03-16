@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./experiencetwo.css";
 
 import ace_data_analytics_logo from "../../images/ExperienceThree/ace_data_analytics_logo.jpg";
@@ -6,8 +6,10 @@ import mirats_insights_logo from "../../images/ExperienceThree/miratsinsights_lo
 import healohub_logo from "../../images/ExperienceThree/healohub_logo.jpg";
 
 import { TbTopologyStar2 } from "react-icons/tb";
+import { useInView } from "framer-motion";
 
 const ExperienceTwo = () => {
+
   const experienceData = [
     {
       company: "Ace Data Analytics",

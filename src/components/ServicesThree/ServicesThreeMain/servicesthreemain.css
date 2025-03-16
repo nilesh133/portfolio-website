@@ -7,29 +7,93 @@
 
 .services_main_container{
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     gap: 2rem;
+    margin-top: 45px !important;
 }
 
 .services_left {
-    flex: 0.4;
+    flex: 0.5;
 }
 
 .services_right {
-    flex: 0.6;
-}
-
-.services_left h2 {
-    position: sticky;
-    top: 50vh;
-    font-weight: 300;
-    font-size: 2.5rem;
-    color: var(--color6);
-    text-align: center;
+    flex: 0.5;
 }
 
 .services_left p {
     position: sticky;
-    top: 55vh;
+    top: 35vh;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #8e8e8e;
+    text-align: center;
 }
+
+/* .services_left p {
+    position: sticky;
+    top: 55vh;
+} */
+
+.servicesthree_header {
+    overflow: hidden;
+    margin: 0 1rem !important;
+}
+
+.servicesthree_header h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    /* margin-bottom: 45px; */
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .services_main_container {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .servicesthreecard_container .servicesthree_card {
+        padding: 1rem !important;
+    }
+
+    .servicesthree_card_points h3 {
+        font-size: 1.1rem !important;
+        z-index: 5;
+        position: relative;
+    }
+
+    .servicesthree_card_points p {
+        font-size: 0.9rem !important;
+        z-index: 5;
+        position: relative;
+    }
+
+    .servicesthree_numbers h1 {
+        right: 16px;
+        bottom: -10px;
+        font-size: 90px;
+    }
+
+    .servicesthree_card_container ul {
+        padding-left: 15px !important;
+    }
+
+    .services_main {
+        padding: 3rem 0 !important;
+    }
+
+    .servicesthreecard_container {
+        height: 70vh !important;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .servicesthree_header h1 {
+      font-size: 1.8rem !important;
+    }
+  }

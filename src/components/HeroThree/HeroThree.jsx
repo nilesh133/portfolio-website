@@ -1,15 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./herothree.css";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import herothreecoffeeimage from "../../images/HeroThree/7427525-removebg-preview.png";
 import herothreebulb from "../../images/HeroThree/19826202_6167464-removebg-preview.png";
-import heroprofile from '../../images/HeroThree/hero_profile.jpg';
+import heroprofile from "../../images/HeroThree/hero_profile.jpg";
 
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
+import { IoEyeSharp } from "react-icons/io5";
+
+import RoundedButton from "../RoundedButton/RoundedButton";
+import Magnetic from "../Magnetic/Magnetic";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const HeroThree = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -81,17 +86,149 @@ const HeroThree = () => {
     return `M0,100 Q50,${curveHeight} 100,100 L100,0 L0,0 Z`;
   };
 
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
+
   return (
-    <div className="hero_three_main plus-jakarta-sans-font">
+    <div className="hero_three_main plus-jakarta-sans-font" ref={container}>
       <div className="hero_three_main_name">
-        <motion.h1 variants={mainTitle} initial="initial" animate="animate">HI, I'M NILESH</motion.h1>
+        <motion.h1 variants={mainTitle} initial="initial" animate="animate">
+          HI, I'M NILESH
+        </motion.h1>
       </div>
-      <motion.div variants={descriptionTitle} initial="initial" animate="animate" className="hero_three_short_description">
-        <span className="hero_three_short_description_profile">software developer</span><img src={heroprofile}/>crafting websites that tell a story and create a
-        memorable online experience.
+      <motion.div
+        variants={descriptionTitle}
+        initial="initial"
+        animate="animate"
+        className="hero_three_short_description"
+      >
+        <div className="hero_three_short_description_container">
+          <div className="hero_three_short_description_image">
+            <img src={heroprofile} />
+          </div>
+          <div className="hero_three_short_description_text">
+            <span className="hero_three_short_description_profile">
+              software developer.
+            </span>
+            {/* <img className="hero_three_short_description_img" src={heroprofile}/> */}
+            crafting websites that tell a story and create a memorable online
+            experience.
+          </div>
+        </div>
       </motion.div>
 
-      <motion.div variants={socialAnim} initial="initial" animate="animate" className="hero_three_main_social">
+      <motion.div
+        className="hero_three_social_container"
+        variants={socialAnim}
+        initial="initial"
+        animate="animate"
+      >
+        <div className="hero_three_social_left">
+          <RoundedButton
+            className="herothree_btn"
+            style={{
+              "--width": "55px",
+              "--height": "55px",
+              backgroundColor: "#000",
+              overflow: "hidden",
+            }}
+            backgroundColor="#0A66C2"
+          >
+            <span>
+              <FaLinkedinIn />
+            </span>
+          </RoundedButton>
+
+          <RoundedButton
+            className="herothree_btn"
+            style={{
+              "--width": "55px",
+              "--height": "55px",
+              overflow: "hidden",
+              backgroundColor: "#000",
+            }}
+            backgroundColor="#c13584"
+          >
+            <span>
+              <FiInstagram />
+            </span>
+          </RoundedButton>
+
+          <RoundedButton
+            className="herothree_btn"
+            style={{
+              "--width": "55px",
+              "--height": "55px",
+              overflow: "hidden",
+              backgroundColor: "#000",
+            }}
+            backgroundColor="#666666"
+          >
+            <span>
+              <IoLogoGithub />
+            </span>
+          </RoundedButton>
+
+          <RoundedButton
+            className="herothree_btn"
+            style={{
+              "--width": "55px",
+              "--height": "55px",
+              overflow: "hidden",
+              backgroundColor: "#000",
+            }}
+            backgroundColor="#1DA1F2"
+          >
+            <span>
+              <FaXTwitter />
+            </span>
+          </RoundedButton>
+        </div>
+        {/* <div className="hero_three_social_right">
+          <RoundedButton
+            className="herothree_btn"
+            style={{
+              "--width": "180px",
+              "--height": "50px",
+              "backgroundColor": "#f1f1f1",
+              overflow: "hidden",
+            }}
+            backgroundColor="#0A66C2"
+          >
+           <div className="hero_three_viewresume">
+            <span><IoEyeSharp/></span>
+            <span>View My Resume</span>
+           </div>
+          </RoundedButton>
+        </div> */}
+      </motion.div>
+
+      {/* <motion.div className="hero_three_resume_btn"  variants={socialAnim}
+        initial="initial"
+        animate="animate">
+        <span className="hero_three_resume_text">View Resume</span>
+       
+          <div className="icon_wrap">
+            <span>
+              <FaArrowRightLong />
+            </span>
+          </div>
+      </motion.div> */}
+
+      {/* <motion.div style={{ height }} className={"circleContainer"}>
+        <div className={"circlee"}></div>
+      </motion.div> */}
+
+      {/* <motion.div
+        variants={socialAnim}
+        initial="initial"
+        animate="animate"
+        className="hero_three_main_social"
+      >
         <span>
           <FaLinkedinIn />
         </span>
@@ -104,10 +241,21 @@ const HeroThree = () => {
         <span>
           <FaXTwitter />
         </span>
-      </motion.div>
+      </motion.div> */}
+
+      {/* <div> */}
+      {/* <RoundedButton backgroundColor={"#334BD3"} className="herothree_btn">
+        <div>
+          <span className="herothree_btn_icon">
+            <IoEyeSharp />
+          </span>
+          <p>View My Resume</p>
+        </div>
+      </RoundedButton> */}
+      {/* </div> */}
 
       {/* Curved SVG Section */}
-      <div class="custom-shape-divider-bottom-1740328712">
+      {/* <div class="custom-shape-divider-bottom-1740328712">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +267,7 @@ const HeroThree = () => {
             class="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> */}
     </div>
   );
 };

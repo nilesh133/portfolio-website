@@ -4,6 +4,11 @@
     position: relative;
 }
 
+.skills_two_header {
+    overflow: hidden;
+    margin: 0 1rem;
+}
+
 .skills_two_header h1{
     font-size: 3.5rem;
     font-weight: bold;
@@ -17,6 +22,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin: 0 1rem;
 }
 
 .skills_two_achievements span {
@@ -27,3 +33,67 @@
 .skills_two_achievements span svg {
     font-size: 3rem;
 }
+
+.skills_two_resume_btn {
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--backgroundColor);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+  
+  .skills_two_resume_btn span {
+    margin: 0px;
+    /* font-size: 16px;
+    font-weight: 300;
+    position: relative; */
+    z-index: 1;
+    position: relative;
+    font-size: 1rem;
+    color: #000;
+  }
+
+  .skills_two_resume_btn:hover span {
+    color: #fff;
+  }
+
+  .skills_two_resume {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem !important;
+  }
+
+  .skills_two_achievements_item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media screen and (max-width: 768px){
+    .skills_two_header h1 {
+      font-size: 2.5rem !important;
+    }
+
+    .skills_two_achievements {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 576px){
+    .skills_two_header h1 {
+      font-size: 1.8rem !important;
+    }
+
+    .skills_two_achievements span svg {
+      font-size: 2rem;
+    }
+
+    .skills_two_achievements span {
+      font-size: 1.2rem;
+    }
+  }

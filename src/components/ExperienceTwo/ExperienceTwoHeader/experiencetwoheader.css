@@ -14,6 +14,21 @@
     color: #ffffff;
     text-align: center;
   }
+
+  .experience_header_line{
+    overflow: hidden;
+  }
+
+   
+  .experience_header h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0 !important;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+  }
 /* 
   .skills_matter canvas {
     width: 100%;

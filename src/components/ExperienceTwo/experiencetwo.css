@@ -159,3 +159,92 @@
   position: sticky;
   inset: auto 0% 0%;
 }
+
+@media screen and (max-width: 1200px){
+  .experience_container {
+    max-width: 90%;
+  }
+
+  .experience_progress {
+    inset: 0% auto 0% 31.6vw;
+  }
+
+  .experience_card_right_company_logo {
+    min-width: 90px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .experience_card_right_company_details h1 {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .experience_card_right_company_details h1 {
+    font-size: 23px;
+  }
+
+  .experience_card {
+    grid-template-columns: .25fr 1fr;
+  } 
+
+  .experience_card_left {
+    position: absolute;
+  }
+
+  .experience_card_left h3 {
+    padding-left: 17vw;
+    font-size: 6vw;
+  }
+
+  .experience_progress {
+    inset: 0% auto 0% 8.6vw;
+  }
+
+  .experience_card_right {
+    margin-top: 70px !important;
+  } 
+
+  .experience_card_right_company_logo {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    margin-right: 15px !important;
+  }
+
+  .experience_card_right_company_details h3 {
+    font-size: 0.9rem;
+  }
+
+  .experience_card_right_company_otherdetails svg {
+    margin: 0 5px !important;
+  } 
+
+  .experience_card_right_company_otherdetails {
+    margin: 10px 0 !important;
+  }
+
+  .experience_card_right_company_work p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .experience_card_right_company_otherdetails span {
+    font-size: 0.9rem;
+  }
+
+  .experience_header {
+    padding: 10vh 0 !important;
+  }
+
+  .experience_header h2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .experience_header h2 {
+    font-size: 1.8rem !important;
+  }
+}

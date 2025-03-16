@@ -35,6 +35,16 @@ const Footer = () => {
             Let's Collab
           </motion.h1>
 
+          <motion.h2
+          className="footer_mobile_email"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          >
+           nkpnilesh13@gmail.com
+          </motion.h2>
+
+
           <div className="hero_three_main_social">
             <span><FaLinkedinIn /></span>
             <span><FiInstagram /></span>
@@ -49,10 +59,10 @@ const Footer = () => {
               <span><FiPhone /></span>
               <span>+91 9904332821</span>
             </div>
-            <div className="footer_bottom_middle footer_bottom_item">
+            {/* <div className="footer_bottom_middle footer_bottom_item">
               <span><HiOutlineMail /></span>
               <span>nkpnilesh13@gmail.com</span>
-            </div>
+            </div> */}
             <div className="footer_bottom_right footer_bottom_item">
               <span><HiOutlineLocationMarker /></span>
               <span>Ahmedabad, India</span>

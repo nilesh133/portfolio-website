@@ -76,7 +76,7 @@ const ProjectModal = ({ modal, projects }) => {
             return (
               <div
                 className="projectmodal_modal"
-                style={{ backgroundColor: color }}
+                style={{ backgroundColor: "#000" }}
                 key={`modal_${index}`}
               >
                 <img src={src} width={300} height={0} alt="image" />

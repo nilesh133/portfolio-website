@@ -57,7 +57,7 @@ const LoadingScreen = () => {
                     {
                         firstName.map((letter, idx) => {
                             return (
-                                <motion.h1 variants={nameVariants} custom={idx} initial="initial" animate="animate">{letter}</motion.h1>
+                                <motion.h1 vaiants={nameVariants} custom={idx} initial="initial" animate="animate">{letter}</motion.h1>
                             )
                         })
                     }

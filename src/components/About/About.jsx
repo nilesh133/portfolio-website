@@ -10,7 +10,8 @@ import { FcPortraitMode } from "react-icons/fc";
 const About = () => {
   const container = useRef(null);
   const para =
-    "As an experienced IT professional with over 1.5 years in software development, I have worked with various technologies, including front-end technologies like React JS and JavaScript, and back-end technologies such as Node.js, MongoDB, and Firebase. Additionally, I have developed strong skills in programming languages like Java and Python. I love building scalable applications, solving complex problems, and continuously learning new technologies to stay ahead in the game.";
+    "As an experienced IT professional with over 2 years in software development, I have worked with various technologies, including front-end technologies like React JS and JavaScript, and back-end technologies such as Node.js, MongoDB, and Firebase. Additionally, I have developed strong skills in programming languages like Java and Python. Beyond coding, I find relaxation in watching movies and web series. I also have a deep love for travel - exploring new places, cultures, and cuisines inspires my creativity and broadens my perspective."
+    // Whether it’s a mind-bending sci-fi or a gripping crime thriller, I enjoy immersing myself in compelling stories and cinematic experiences.";
 
   function generateRandomOrder(length) {
     const indices = [...Array(length).keys()];
@@ -43,16 +44,37 @@ const About = () => {
 
               return (
                 <React.Fragment key={i}>
-                  {word === "Additionally," && <div className="about_content_newline"></div>}
+                  {word === "Beyond" && <div className="about_content_newline"></div>}
                   {
-                    word == "software" && <FcSelfServiceKiosk className="about_content_icons"/>
+                    word == "professional" && 
+                    // <FcSelfServiceKiosk className="about_content_icons"/>
+                    <div className="about_content_img_container">
+                      <img className="about_content_img" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                    </div>
                   }
                    {
-                    word == "various" && <FcCommandLine className="about_content_icons"/>
+                    word == "developed" && 
+                    // <FcCommandLine className="about_content_icons"/>
+                    <div className="about_content_img_container">
+                      <img className="about_content_img" src="https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29kZXxlbnwwfDB8MHx8fDA%3D"/>
+                    </div>
                   }
                   {
-                    word == "scalable" && <FcFilmReel className="about_content_icons"/>
+                    word == "movies" && 
+                    // <FcFilmReel className="about_content_icons"/>
+                    <div className="about_content_img_container">
+                      <img className="about_content_img" src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                    </div>
                   }
+
+{
+                    word == "inspires" && 
+                    // <FcFilmReel className="about_content_icons"/>
+                    <div className="about_content_img_container">
+                      <img className="about_content_img" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                    </div>
+                  }
+
                   <Word progress={scrollYProgress} range={[start, end]}>
                     {word}
                   </Word>

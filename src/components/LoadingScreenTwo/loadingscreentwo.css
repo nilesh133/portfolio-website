@@ -1,0 +1,49 @@
+.introduction {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    background-color: #141516;
+}
+
+.introduction svg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 300px);
+}
+
+.introduction svg path {
+    fill: #141516;
+}
+
+.introduction p {
+    display: flex;
+    color: white;
+    font-size: 2.5rem;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-weight: 600;
+    margin: 0 1rem;
+    /* text-transform: capitalize; */
+}
+
+@media screen and (max-width: 576px) {
+    .introduction p {
+        font-size: 1.1rem !important;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .introduction p {
+        font-size: 1.5rem;
+    } 
+}
+
+/* .introduction p span {
+    margin-right: 10px;
+} */

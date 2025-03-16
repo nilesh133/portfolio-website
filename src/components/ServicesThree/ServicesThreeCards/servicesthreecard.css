@@ -37,6 +37,8 @@
     margin: 0;
     color: var(--color6);
     font-weight: 300;
+    z-index: 5;
+    position: relative;
   }
 
   .servicesthree_card_points {
