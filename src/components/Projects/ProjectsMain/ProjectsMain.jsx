@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Project from "../Project/Project";
 import "./projectsmain.css";
 import ProjectModal from "../ProjectModal/ProjectModal";
@@ -7,6 +7,8 @@ import mosaic from "../../../images/Projects/Mosaic/mosaic_laptop_version_upload
 import landerz from "../../../images/Projects/Landerz/landerz_laptop_version_upload.png";
 import landing from "../../../images/Projects/Landing/landing_laptop_version_upload.png";
 import coffeeshop from "../../../images/Projects/CoffeeShop/coffeeblend_laptop_version_upload.png";
+import { useInView, motion } from "framer-motion";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const projects = [
   {
@@ -46,11 +48,59 @@ const projects = [
 const ProjectsMain = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
 
+  const containerMain = useRef(null);
+
+  const isInView = useInView(containerMain, {
+    // once: true,
+    margin: "-100px",
+  });
+
+  const servicesTitle = {
+    initial: {
+      translateX: "-100px",
+      opacity: 0,
+    },
+    animate: {
+      translateX: "0%",
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
+  const opacityAnim = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <div>
-      <main className="projectsmain plus-jakarta-sans-font">
+      <main className="projectsmain plus-jakarta-sans-font" ref={containerMain}>
         <div className="projectsmain_header">
-          <h1>My Craft Hub</h1>
+          <motion.h1
+            variants={servicesTitle}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+          >
+            My Craft Hub
+          </motion.h1>
+          <motion.p
+            variants={opacityAnim}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+          >
+            A showcase of my diverse projects, where creativity and technology
+            come together to solve real-world problems. Explore the work that
+            defines my journey as a developer!
+          </motion.p>
         </div>
         <div className="projectsmain_body">
           {projects.map((project, index) => {
@@ -65,6 +115,20 @@ const ProjectsMain = () => {
           })}
         </div>
         <ProjectModal modal={modal} projects={projects} />
+        <div
+          className="hero_three_resume_btn"
+          // variants={socialAnim}
+          // initial="initial"
+          // animate="animate"
+        >
+          <span className="hero_three_resume_text">See More</span>
+
+          <div className="icon_wrap">
+            <span>
+              <FaArrowRightLong />
+            </span>
+          </div>
+        </div>
       </main>
     </div>
   );

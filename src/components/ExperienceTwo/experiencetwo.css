@@ -195,7 +195,8 @@
 
   .experience_card_left h3 {
     padding-left: 17vw;
-    font-size: 6vw;
+    font-size: 7vw;
+    margin: 1rem 0 !important;
   }
 
   .experience_progress {
@@ -203,7 +204,7 @@
   }
 
   .experience_card_right {
-    margin-top: 70px !important;
+    margin-top: 100px !important;
   } 
 
   .experience_card_right_company_logo {
@@ -247,4 +248,36 @@
   .experience_header h2 {
     font-size: 1.8rem !important;
   }
+
+  .experience_card_right_company_details h1 {
+    font-size: 18px;
+  }
+
+  .experience_card_right_company_otherdetails span {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .experience_card_right_company_details h3 {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .experience_card_right_company_work p {
+    font-size: 0.9rem;
+  }
+
+  .experience_card_right {
+    margin-top: 90px !important;
+  } 
+
+  .experience_card_left h3 {
+    margin: 1.9rem 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .experience_card_right {
+    margin-top: 70px !important;
+  } 
 }

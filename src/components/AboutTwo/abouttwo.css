@@ -1,0 +1,118 @@
+.abouttwo_wrapper {
+  /* height: 250vh; */
+  width: 100%;
+  background-color: var(--color2);
+  z-index: 10;
+  position: relative;
+  /* padding-bottom: 50vh; */
+}
+
+.abouttwo_inner {
+  /* position: sticky;
+  top: 0; */
+}
+
+.abouttwo_content {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abouttwo_content_h1 {
+  display: flex;
+  font-size: clamp(1.5rem, 4vw, 2.7vw); /* Adjusts between min and max */
+  line-height: 1;
+  padding: 40px;
+  max-width: 80vw; /* Ensures it does not exceed screen width */
+  color: var(--color6);
+  flex-wrap: wrap;
+  font-weight: 500;
+  text-align: center;
+}
+
+.abouttwo_content_h1 .abouttwo_h1_word {
+  position: relative;
+  margin-right: 12px;
+  margin-top: 12px;
+  /* line-height: 20px; */
+}
+
+.abouttwo_content_h1 .abouttwo_h1_word .abouttwo_h1_shadow {
+  position: absolute;
+  opacity: 0.2;
+  /* line-height: 20px; */
+}
+
+.abouttwo_content_newline {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.abouttwo_content_icons {
+  font-size: 3rem;
+  margin-left: -8px;
+  margin-right: 2px;
+}
+
+.abouttwo_content_img_container {
+  width: 72px;
+  height: 44px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px !important;
+  margin-right: 10px !important;
+  border: 3px solid #fff;
+}
+
+.abouttwo_content_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.servicesthree_numbers h1 {
+  font-size: 120px;
+  color: #8e8e8e;
+  font-weight: 700;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+@media screen and (max-width: 1200px){
+    .abouttwo_content_h1 {
+        max-width: 100vw !important;
+        padding: 40px 30px !important;
+        line-height: unset !important;
+    }
+
+    .abouttwo_content_img_container {
+        width: 60px;
+        height: 35px;
+        border: 2px solid #fff !important;
+        margin-top: 7px !important;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .abouttwo_content_h1 {
+        line-height: 0.8 !important;
+    }
+
+    .abouttwo_content_img_container {
+        width: 40px;
+        height: 25px;
+        border: 2px solid #fff !important;
+        margin-bottom: -8px !important;
+        margin-right: 5px !important;
+    }
+
+    .abouttwo_content_h1 .abouttwo_h1_word {
+        margin-right: 4px;
+        font-size: 1.2rem !important;
+    }
+}

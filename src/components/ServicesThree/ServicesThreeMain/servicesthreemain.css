@@ -92,12 +92,24 @@
     }
 
     .services_left p {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
 }
 
 @media screen and (max-width: 576px){
     .servicesthree_header h1 {
       font-size: 1.8rem !important;
+    }
+
+    .services_main_container {
+        margin-top: 20px !important;
+    }
+
+    .servicesthree_card_points h3 {
+        font-size: 1rem !important;
+    }
+
+    .servicesthree_card_points p {
+        font-size: 0.8rem !important;
     }
   }

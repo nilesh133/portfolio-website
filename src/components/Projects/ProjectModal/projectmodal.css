@@ -37,7 +37,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #455CE9;
+    background-color: #000;
     color: white;
     position: absolute;
     z-index: 2;
@@ -47,8 +47,19 @@
     font-size: 14px;
     font-weight: 300;
     pointer-events: none;
+    z-index: 11;
 }
 
 .cursorLabel{
     background-color: transparent;
 }
+
+@media screen and (max-width: 768px) {
+    .projectmodal_container {
+      display: none;
+    }
+
+    .projectmodal_cursorlabel, .projectmodal_cursor {
+        display: none;
+    }
+  }

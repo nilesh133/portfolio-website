@@ -23,38 +23,46 @@ const ProjectModal = ({ modal, projects }) => {
   };
 
   useEffect(() => {
+    const projectMainElement = document.querySelector(".projectsmain");
+  
+    if (!projectMainElement) return;
+  
     // Generalized function to move elements with gsap quickTo
     const createMoveFunctions = (element, duration) => ({
       moveX: gsap.quickTo(element, "left", { duration, ease: "power3" }),
       moveY: gsap.quickTo(element, "top", { duration, ease: "power3" }),
     });
-
+  
     // Create movement functions for modal container, cursor, and cursor label
     const modalMove = createMoveFunctions(modalContainer.current, 0.8);
     const cursorMove = createMoveFunctions(cursor.current, 0.5);
     const cursorLabelMove = createMoveFunctions(cursorLabel.current, 0.45);
-
+  
     // Mouse move event listener
     const handleMouseMove = (e) => {
-      const { pageX, pageY } = e;
-
-      // Move the modal container, custom cursor, and cursor label
-      modalMove.moveX(pageX);
-      modalMove.moveY(pageY);
-      cursorMove.moveX(pageX);
-      cursorMove.moveY(pageY);
-      cursorLabelMove.moveX(pageX);
-      cursorLabelMove.moveY(pageY);
+      const rect = projectMainElement.getBoundingClientRect(); // Get position of `.projectsmain`
+      
+      const offsetX = e.clientX - rect.left; // Cursor X relative to `.projectsmain`
+      const offsetY = e.clientY - rect.top; // Cursor Y relative to `.projectsmain`
+  
+      // Move elements
+      modalMove.moveX(offsetX);
+      modalMove.moveY(offsetY);
+      cursorMove.moveX(offsetX);
+      cursorMove.moveY(offsetY);
+      cursorLabelMove.moveX(offsetX);
+      cursorLabelMove.moveY(offsetY);
     };
-
+  
     // Add mousemove event listener
-    window.addEventListener("mousemove", handleMouseMove);
-
+    projectMainElement.addEventListener("mousemove", handleMouseMove);
+  
     // Cleanup event listener on component unmount
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      projectMainElement.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+  
 
 
   const modalContainer = useRef(null);

@@ -67,6 +67,18 @@
   color: #2d313c;
 }
 
+@media screen and (max-width: 992px) {
+  .footer_top h1 {
+    font-size: 7rem !important;
+    margin: 1rem 0;
+  }
+
+  .hero_three_main_social {
+    gap: 4rem;
+    margin-top: 140px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer_main {
     height: 60vh;
@@ -78,22 +90,22 @@
   }
 
   .footer_top p {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
 
   .footer_top h1 {
-    font-size: 4.5rem !important;
+    font-size: 4.8rem !important;
     margin: 1rem 0;
   }
 
   .footer_top h2 {
-    font-size: 3rem;
+    font-size: 1.8rem;
     margin: 1rem 0;
   }
 
   .hero_three_main_social {
-    gap: 2rem;
-    margin-top: 55px !important;
+    gap: 4rem;
+    margin-top: 90px !important;
   }
 
   .hero_three_main_social span {
@@ -101,7 +113,7 @@
   }
 
   .footer_mobile_email {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
 
   .footer_bottom_item span:nth-child(2) {
@@ -115,10 +127,27 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
+  .footer_main {
+    height: 50vh;
+  }
+
+  .footer_container {
+    height: 50vh;
+  }
 
   .footer_top h1 {
-    font-size: 7rem;
+    font-size: 3.4rem !important;
     margin: 1rem 0;
+  }
+
+  .footer_mobile_email {
+    font-size: 1.6rem !important;
+    margin: 1rem 0;
+  }
+
+  .hero_three_main_social {
+    gap: 2rem;
+    margin-top: 80px !important;
   }
 }

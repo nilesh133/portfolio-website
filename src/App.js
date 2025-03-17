@@ -26,6 +26,7 @@ import ProjectsTwo from './components/ProjectsTwo/ProjectsTwo';
 import LoadingScreenTwo from './components/LoadingScreenTwo/LoadingScreenTwo';
 import { AnimatePresence } from 'framer-motion';
 import StickyCursor from './components/StickyCursor/StickyCursor';
+import AboutTwo from './components/AboutTwo/AboutTwo';
 
 const App = () => {
 
@@ -90,12 +91,16 @@ const App = () => {
             <StickyCursor activeSection={activeSection} /> {/* Pass active section */}
 
             {/* Assign IDs to sections for detection */}
-            <section id="hero">
+            {/* <section id="hero">
               <HeroThree />
-            </section>
+            </section> */}
+
+            {/* <section id="about">
+              <About />
+            </section> */}
 
             <section id="about">
-              <About />
+              <AboutTwo />
             </section>
 
             <section id="experience">
@@ -103,14 +108,14 @@ const App = () => {
               <ExperienceTwo />
             </section>
 
+            <section id="projects">
+              <ProjectsMain/>
+            </section>
+
             <section id="skills">
               <SkillsTwoMain />
               <SkillsTwo />
             </section>
-            {/* 
-            <section id="projects">
-              <ProjectsMain/>
-            </section> */}
 
             <section id="services">
               <ServicesThreeMain />

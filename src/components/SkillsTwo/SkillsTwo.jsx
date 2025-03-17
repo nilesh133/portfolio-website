@@ -171,7 +171,7 @@ const SkillsSection = () => {
       engine: engine,
       options: {
         width: window.innerWidth,
-        height: 400,
+        height: window.innerWidth <= 576 ? 250 : 400,
         wireframes: false,
         background: "#fff"
       }
@@ -179,7 +179,7 @@ const SkillsSection = () => {
   
     const ground = Matter.Bodies.rectangle(
       window.innerWidth / 2,
-      390,
+      window.innerWidth <= 576 ? 240 : 390,
       window.innerWidth,
       20,
       { isStatic: true, render: { fillStyle: "#ffffff" } }
@@ -194,15 +194,16 @@ const SkillsSection = () => {
   
     const skillBodies = skills.map((skill) => {
       const textWidth = getTextWidth(skill.skill_name); 
-      const height = window.innerWidth <= 576 ? 30 : 40;  // Match both Matter.js and span height
-    
+      const height = window.innerWidth <= 576 ? 30 : window.innerWidth ? 35 : 40;  // Match both Matter.js and span height
+      const chamfer = window.innerWidth <= 576 ? 14 : window.innerWidth <= 992 ? 16 : 18;
+
       const body = Matter.Bodies.rectangle(
         100 + Math.random() * (window.innerWidth - 200),
         Math.random() * -300,
         textWidth,
         height, // Make sure this height matches the span height
         {
-          chamfer: { radius: 25 },
+          chamfer: { radius: chamfer },
           restitution: 0.6,
           friction: 0.3,
           render: {
@@ -251,7 +252,7 @@ const SkillsSection = () => {
   
 
   return (
-    <div ref={sceneRef} className="skills_matter plus-jakarta-sans-font" style={{ width: "99vw", height: "400px", position: "relative", overflow: "hidden", zIndex: "10" }}>
+    <div ref={sceneRef} className="skills_matter plus-jakarta-sans-font" style={{ width: "99vw", height: window.innerWidth <= 576 ? "250px" : "400px", position: "relative", overflow: "hidden", zIndex: "10" }}>
      {skillPositions.map((pos, index) => (
   <span
     key={index}
@@ -268,7 +269,7 @@ const SkillsSection = () => {
       background: `${skills[index].skill_bg}`,
       borderRadius: "20px",
       fontWeight: "bold",
-      fontSize: `${window.innerWidth <= 576 ? "10px" : "14px"}`,
+      fontSize: `${window.innerWidth <= 576 ? "10px" : window.innerWidth <= 992 ? "12px" : "14px"}`,
       whiteSpace: "nowrap",
       pointerEvents: "none",
       userSelect: "none",

@@ -281,11 +281,13 @@
   display: flex;
   align-items: center;
   padding: 0.2rem;
-  position: absolute;
+  /* position: absolute;
   right: 20px;
-  bottom: 9%;
+  bottom: 9%; */
   padding: 10px 20px;
   transition: all .3s ease-out;
+  margin: 0 auto !important;
+  margin-top: 30px !important;
 }
 
 .icon_wrap {
@@ -364,6 +366,11 @@
 }
 
 @media screen and (max-width: 576px) {
+  .hero_three_main {
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
   .hero_three_short_description_container {
     flex-direction: column;
     gap: 1rem;
@@ -392,4 +399,24 @@
   .hero_three_resume_text {
     font-size: 12px;
   } 
+}
+
+@media screen and (max-width: 480px) {
+  .hero_three_short_description {
+    font-size: 8vw;
+    text-align: center;
+    width: 90vw;
+  }
+
+  .herothree_btn span{
+   font-size: 23px;
+  }
+
+  .hero_three_main_name h1 {
+    font-size: 12.3vw;
+  }
+
+  .hero_three_short_description {
+    font-size: 7vw;
+  }
 }
