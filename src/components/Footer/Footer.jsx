@@ -36,27 +36,50 @@ const Footer = () => {
           </motion.h1>
 
           <motion.h2
-          className="footer_mobile_email"
+            className="footer_mobile_email"
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           >
-           nkpnilesh13@gmail.com
+            nkpnilesh13@gmail.com
           </motion.h2>
 
-
           <div className="hero_three_main_social">
-            <span><FaLinkedinIn /></span>
-            <span><FiInstagram /></span>
-            <span><IoLogoGithub /></span>
-            <span><FaXTwitter /></span>
+            <a
+              href="https://www.linkedin.com/in/nilesh-prajapati-432983214/"
+              target="_blank"
+            >
+              <span>
+                <FaLinkedinIn />
+              </span>
+            </a>
+            <a
+              href="https://www.instagram.com/nileshprajapati_13/"
+              target="_blank"
+            >
+              <span>
+                <FiInstagram />
+              </span>
+            </a>
+            <a href="https://github.com/nilesh133" target="_blank">
+              <span>
+                <IoLogoGithub />
+              </span>
+            </a>
+            <a href="https://twitter.com/Nileshp1313" target="_blank">
+              <span>
+                <FaXTwitter />
+              </span>
+            </a>
           </div>
         </div>
 
         <div className="footer_bottom">
           <div className="footer_bottom_container">
             <div className="footer_bottom_item footer_bottom_left">
-              <span><FiPhone /></span>
+              <span>
+                <FiPhone />
+              </span>
               <span>+91 9904332821</span>
             </div>
             {/* <div className="footer_bottom_middle footer_bottom_item">
@@ -64,7 +87,9 @@ const Footer = () => {
               <span>nkpnilesh13@gmail.com</span>
             </div> */}
             <div className="footer_bottom_right footer_bottom_item">
-              <span><HiOutlineLocationMarker /></span>
+              <span>
+                <HiOutlineLocationMarker />
+              </span>
               <span>Ahmedabad, India</span>
             </div>
           </div>

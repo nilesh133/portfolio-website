@@ -100,15 +100,18 @@ const ProjectModal = ({ modal, projects }) => {
         initial="initial"
         animate={active ? "enter" : "closed"}
       ></motion.div>
-      <motion.div
-        ref={cursorLabel}
-        className="projectmodal_cursorlabel"
-        variants={scaleAnimation}
-        initial="initial"
-        animate={active ? "enter" : "closed"}
-      >
-        View
-      </motion.div>
+      
+      
+        <motion.div
+          ref={cursorLabel}
+          className="projectmodal_cursorlabel"
+          variants={scaleAnimation}
+          initial="initial"
+          animate={active ? "enter" : "closed"}
+        >
+          <a href={projects[index].url}></a>
+          View
+        </motion.div>
     </>
   );
 };

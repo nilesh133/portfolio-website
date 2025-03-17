@@ -91,9 +91,9 @@ const App = () => {
             <StickyCursor activeSection={activeSection} /> {/* Pass active section */}
 
             {/* Assign IDs to sections for detection */}
-            {/* <section id="hero">
+            <section id="hero">
               <HeroThree />
-            </section> */}
+            </section>
 
             {/* <section id="about">
               <About />

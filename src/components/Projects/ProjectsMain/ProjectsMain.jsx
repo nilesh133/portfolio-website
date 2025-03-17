@@ -18,6 +18,7 @@ const projects = [
     color: "#000000",
     tech: "React JS, SCSS, NodeJS, MongoDB",
     domain: "FullStack Developement",
+    url: "https://mosaic-nilesh133s-projects.vercel.app/"
   },
   {
     title: "Landerz",
@@ -26,6 +27,7 @@ const projects = [
     color: "#8C8C8C",
     tech: "React JS, CSS",
     domain: "Frontend Developement",
+    url: "https://landerz-nilesh133s-projects.vercel.app/"
   },
   {
     title: "Landing",
@@ -34,6 +36,7 @@ const projects = [
     color: "#EFE8D3",
     tech: "React JS, CSS",
     domain: "Frontend Developement",
+    url: "https://landing-nilesh133s-projects.vercel.app/"
   },
   {
     title: "Coffee Shop",
@@ -42,6 +45,7 @@ const projects = [
     color: "#706D63",
     tech: "React JS, CSS",
     domain: "Frontend Developement",
+    url: "https://nilesh133.github.io/Coffee-Shop-Website/"
   },
 ];
 
@@ -117,6 +121,8 @@ const ProjectsMain = () => {
         <ProjectModal modal={modal} projects={projects} />
         <div
           className="hero_three_resume_btn"
+          onClick={() => {
+            window.open("https://port-folio-nilesh133.vercel.app/projects", "_blank")}}
           // variants={socialAnim}
           // initial="initial"
           // animate="animate"
