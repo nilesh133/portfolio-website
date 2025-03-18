@@ -137,6 +137,7 @@ const StickyCursor = ({ activeSection }) => {
           scaleX: scale.x,
           scaleY: scale.y,
           backgroundColor: cursorStyle.backgroundColor,
+          display: activeSection == "projects" ? "none" : "block"
         }}
         animate={{
           width: cursorSize,

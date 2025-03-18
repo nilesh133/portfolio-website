@@ -138,9 +138,11 @@ const HeroThree = () => {
             }}
             backgroundColor="#0A66C2"
           >
-            <span>
-              <FaLinkedinIn />
-            </span>
+            <a href="https://www.linkedin.com/in/nilesh-prajapati-432983214/" target="_blank">
+              <span>
+                <FaLinkedinIn />
+              </span>
+            </a>
           </RoundedButton>
 
           <RoundedButton
@@ -153,9 +155,11 @@ const HeroThree = () => {
             }}
             backgroundColor="#c13584"
           >
-            <span>
-              <FiInstagram />
-            </span>
+            <a href="https://www.instagram.com/nileshprajapati_13/" target="_blank">
+              <span>
+                <FiInstagram />
+              </span>
+            </a>
           </RoundedButton>
 
           <RoundedButton
@@ -168,9 +172,11 @@ const HeroThree = () => {
             }}
             backgroundColor="#666666"
           >
-            <span>
-              <IoLogoGithub />
-            </span>
+            <a href="https://github.com/nilesh133" target="_blank">
+              <span>
+                <IoLogoGithub />
+              </span>
+            </a>
           </RoundedButton>
 
           <RoundedButton
@@ -183,9 +189,11 @@ const HeroThree = () => {
             }}
             backgroundColor="#1DA1F2"
           >
-            <span>
-              <FaXTwitter />
-            </span>
+            <a href="https://twitter.com/Nileshp1313" target="_blank">
+              <span>
+                <FaXTwitter />
+              </span>
+            </a>
           </RoundedButton>
         </div>
         {/* <div className="hero_three_social_right">

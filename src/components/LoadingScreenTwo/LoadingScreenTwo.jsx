@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 
 const words = [
   "Please wait while I debug reality.",
-  "Initializing awesomeness... Almost there!",
-  "Welcome to My Portfolio!",
+  "Crafting something awesome for you..."
+  // "Initializing awesomeness... Almost there!",
+  // "Welcome to My Portfolio!",
 ];
 
 const PreLoader = ({ setLoadingComplete }) => {

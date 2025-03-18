@@ -5,6 +5,7 @@ import gsap from "gsap";
 
 const ProjectModal = ({ modal, projects }) => {
   const { active, index } = modal;
+  // const navigate = useNavigate();
 
   const scaleAnimation = {
     initial: { scale: 0, x: "-50%", y: "-50%" },
@@ -99,6 +100,7 @@ const ProjectModal = ({ modal, projects }) => {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
+        
       ></motion.div>
       
       
@@ -109,7 +111,7 @@ const ProjectModal = ({ modal, projects }) => {
           initial="initial"
           animate={active ? "enter" : "closed"}
         >
-          <a href={projects[index].url}></a>
+          {/* <a href={projects[index].url}></a> */}
           View
         </motion.div>
     </>

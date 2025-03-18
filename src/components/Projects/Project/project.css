@@ -71,4 +71,10 @@
     .projectsmain_project h2{
         font-size: 1.6rem;
     }
+    .projectsmain_project:hover h2{
+        color: #000;
+    }
+    .projectsmain_project:hover::after {
+        top: 100%;
+    }
 }

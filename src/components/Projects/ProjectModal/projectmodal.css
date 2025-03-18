@@ -50,6 +50,10 @@
     z-index: 11;
 }
 
+.projectmodal_cursorlabel {
+    pointer-events: none;
+} 
+
 .cursorLabel{
     background-color: transparent;
 }
