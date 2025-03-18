@@ -22,7 +22,7 @@ const AboutTwo = () => {
 
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start 0.5", "end 0.3"],
+    offset: ["start 0.5", "end 0.5"],
   });
 
   const words = para.split(" ");
