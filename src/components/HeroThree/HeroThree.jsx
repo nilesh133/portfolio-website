@@ -15,6 +15,7 @@ import { IoEyeSharp } from "react-icons/io5";
 import RoundedButton from "../RoundedButton/RoundedButton";
 import Magnetic from "../Magnetic/Magnetic";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ParticleBackground from "../Particles/Particles";
 
 const HeroThree = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -95,6 +96,7 @@ const HeroThree = () => {
 
   return (
     <div className="hero_three_main plus-jakarta-sans-font" ref={container}>
+      <ParticleBackground/>
       <div className="hero_three_main_name">
         <motion.h1 variants={mainTitle} initial="initial" animate="animate">
           HI, I'M NILESH

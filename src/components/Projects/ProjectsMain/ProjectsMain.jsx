@@ -9,6 +9,7 @@ import landing from "../../../images/Projects/Landing/landing_laptop_version_upl
 import coffeeshop from "../../../images/Projects/CoffeeShop/coffeeblend_laptop_version_upload.png";
 import { useInView, motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
+import resume from "../../../images/Projects/Resume/Nilesh-Resume.pdf"
 
 const projects = [
   {
@@ -119,21 +120,41 @@ const ProjectsMain = () => {
           })}
         </div>
         <ProjectModal modal={modal} projects={projects} />
-        <div
-          className="hero_three_resume_btn"
-          onClick={() => {
-            window.open("https://port-folio-nilesh133.vercel.app/projects", "_blank")}}
-          // variants={socialAnim}
-          // initial="initial"
-          // animate="animate"
-        >
-          <span className="hero_three_resume_text">See More</span>
+        <div style={{display: "flex", gap: "1rem", justifyContent: "center"}}>
+          <div
+            className="hero_three_resume_btn"
+            onClick={() => {
+              window.open("https://port-folio-nilesh133.vercel.app/projects", "_blank")}}
+            // variants={socialAnim}
+            // initial="initial"
+            // animate="animate"
+          >
+            <span className="hero_three_resume_text">See More</span>
 
-          <div className="icon_wrap">
-            <span>
-              <FaArrowRightLong />
-            </span>
+            <div className="icon_wrap">
+              <span>
+                <FaArrowRightLong />
+              </span>
+            </div>
           </div>
+          <a href="../../../images/Projects/Resume/Nilesh-Resume.pdf"></a>
+          <div
+            className="hero_three_resume_btn"
+            onClick={() => {
+              window.open(resume, "_blank")}}
+            // variants={socialAnim}
+            // initial="initial"
+            // animate="animate"
+          >
+            <span className="hero_three_resume_text">View Resume</span>
+
+            <div className="icon_wrap">
+              <span>
+                <FaArrowRightLong />
+              </span>
+            </div>
+          </div>
+
         </div>
       </main>
     </div>

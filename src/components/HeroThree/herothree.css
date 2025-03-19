@@ -175,6 +175,7 @@
   color: var(--color2);
   width: 80vw;
   margin: 2px auto !important;
+  z-index: 10;
 }
 
 .hero_three_short_description_profile {
@@ -241,6 +242,7 @@
 
 .hero_three_social_container {
   margin-top: 60px;
+  z-index: 10;
 }
 
 .hero_three_social_left {
@@ -297,7 +299,7 @@
   bottom: 9%; */
   padding: 10px 20px;
   transition: all .3s ease-out;
-  margin: 0 auto !important;
+  /* margin: 0 auto !important; */
   margin-top: 30px !important;
 }
 
