@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import herothreecoffeeimage from "../../images/HeroThree/7427525-removebg-preview.png";
 import herothreebulb from "../../images/HeroThree/19826202_6167464-removebg-preview.png";
-import heroprofile from "../../images/HeroThree/hero_profile.jpg";
+import heroprofile from "../../images/HeroThree/profile.jpg";
 
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
