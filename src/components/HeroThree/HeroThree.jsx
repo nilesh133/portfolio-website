@@ -96,7 +96,7 @@ const HeroThree = () => {
 
   return (
     <div className="hero_three_main plus-jakarta-sans-font" ref={container}>
-      <ParticleBackground/>
+      {/* <ParticleBackground/> */}
       <div className="hero_three_main_name">
         <motion.h1 variants={mainTitle} initial="initial" animate="animate">
           HI, I'M NILESH
