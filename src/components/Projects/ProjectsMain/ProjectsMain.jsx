@@ -9,7 +9,7 @@ import landing from "../../../images/Projects/Landing/landing_laptop_version_upl
 import coffeeshop from "../../../images/Projects/CoffeeShop/coffeeblend_laptop_version_upload.png";
 import { useInView, motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
-import resume from "../../../images/Projects/Resume/Nilesh-Resume.pdf"
+import resume from "../../../images/Projects/Resume/NILESH_RESUME.pdf";
 
 const projects = [
   {
