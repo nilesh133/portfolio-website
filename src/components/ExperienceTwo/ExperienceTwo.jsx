@@ -22,6 +22,7 @@ const ExperienceTwo = () => {
       work_year: "2023",
       work_description: [
         // "Collaborated and coordinated with project leads and developers to gather requirements and establish project objectives and deliverables.",
+        "Contributed to the development of a sourcing and distribution system for an Australia-based food warehouse and distribution company, central to the company’s core operations, which involves sourcing goods from suppliers and fulfilling orders for clients, along with modules for product configuration, supplier setup, and product-supplier mapping to ensure seamless operations and data consistency. Additionally, implemented WebSocket integration for real-time data transfer across the platform.",
         "Spearheaded the development of a robust payroll management system for an Australia-based food warehouse and distribution company. Responsibilities included designing and implementing seamless onboarding process for new employees, streamlined tracking of employee attendance, punch-in/punch-out records, and accurate calculation of wages.",
         "Developed a dynamic configuration system within a loan application, empowering administrators to customize commission structures for diverse agent tiers, with animated workflows facilitating smooth navigation and user engagement",
         "Specialized in crafting appealing designs, integrating APIs for real-time data, and implementing seamless frontend functionalities to create user-friendly applications.",
